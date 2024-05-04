@@ -1,0 +1,5 @@
+# Construction Product and Process Ontology (CPPO)
+The Construction Product and Process Ontology describe construction products and processes in a schematic manner. It provides methods to describe the exchange of construction information along the lifecycle of a construction project. It is aligned with the Real Estate Core (REC) Ontology and LOIN ontology. The top domain model is based on the ISO 12006-2 standard. 
+## HTML documentation
++ Namespace (base-URI):http://www.semanticweb.org/datamallar/ConstructionProdProcOnto#
++ Suggested prefix: cppo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
