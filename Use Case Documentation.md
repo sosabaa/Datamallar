@@ -84,6 +84,8 @@ The objective of the information exchanges is to have in the end an Asset Inform
 |13	|Purchase and install the product and handover product information to the Facility owner	|Medium voltage electrical contracting|
 
 ## Diagrams and process map
+<img src="https://github.com/sosabaa/Datamallar/assets/73257793/3c04da1f-35db-4b9e-b107-6b9e264d3ae8" alt="Process Diagram"/>
+
 
 # Exchange requirements
 ## General description of the information to be exchanged
@@ -91,31 +93,100 @@ The objective of the information exchanges is to have in the end an Asset Inform
 ## Room
 |Component	|Rooms inside a building or structure|
 |-----------|------------------------------------|
-|IFC Entity	|IfcSpace|
-|Alphanumeric information:|   |
+|EIR ID	|er_01|
+|Object	|IfcSpace|
+|Object URI|https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL|
+|Purpose|  10 Visualisering| 
+|Milestone| 1 Programskede|
+|Detail level| Functional|
+|Actor| Client|
+|**Alphanumeric information:**|   |
 |IFC Object Name |	Room number. At the building permit stage, the room number is not mandatory.|
 |IFC Object Description |	Room name. The room name is mandatory.|
 |IFC PredefinedType	| Internal|
-|IFC Properties:|  |
-|---------------|--|
+|**IFC Properties:**|  |
+|---------------|-------------------|
 |	Data content needs |	Type of the room|
 |	Limitations	|-|
 |	Propertyset|	Pset_SpaceOccupancyRequirements|
 |	Property	|OccupancyType|
-|	Allowed values	| According to bsDD.|
+| URI/GUID|https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL/prop/Pset_SpaceOccupancyRequirements/OccupancyType|
+|	Allowed values	| According to national building code.|
+| Key property    |The value must be TRUE if the property is a key property for the object. Otherwise, the value is FALSE or empty.|
 |-----------------|-------------------|
 |	Data content needs  |	Capacity of persons| 
-|	Limitations	|+ The number of persons is only given for the premises for which it is needed (e.g., meeting rooms) + The value is the maximum number of people in the room.|
+|	Limitations	|- The number of persons is only given for the premises for which it is needed (e.g., meeting rooms); - The value is the maximum number of people in the room.|
 |	Propertyset	|Pset_SpaceOccupancyRequirements|
 |	Property	| OccupancyNumber|
+| URI/GUID|https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL/prop/Pset_SpaceOccupancyRequirements/OccupancyNumber|
 |	Allowed values |	Maximum number of persons in the room (total)|
+| Key property    |The value must be TRUE if the property is a key property for the object. Otherwise, the value is FALSE or empty.|
+|-----------------|-------------------|
+|	Data content needs  |	Capacity of room| 
+|	Limitations	|- |
+|	Propertyset	|Pset_SpaceCommon|
+|	Property	| NetPlannedArea|
+| URI/GUID|https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL/prop/Pset_SpaceCommon/NetPlannedArea|
+|	Allowed values |	Square area|
+| Key property    |The value must be TRUE if the property is a key property for the object. Otherwise, the value is FALSE or empty.|
+|-----------------|-------------------|
 |	Data content needs	|Accessibility|
 |	Limitations	|-|
 |	Propertyset |	Pset_SpaceCommon|
 |	Property	|HandicapAccessible|
 |	Allowed values	| The value must be TRUE if the space is intended to be accessible or serves access to an accessible space. Otherwise, the value is FALSE or empty.|
-|Documentation: |  |
-|	Document	| - 
+| URI/GUID|https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL/prop/Pset_SpaceCommon/HandicapAccessible|
+| Key property    |The value must be TRUE if the property is a key property for the object. Otherwise, the value is FALSE or empty.|
+|**Documentation:** |  |
+|	Document	| - |
 
 
 ## Light fixture
+|Component	|Light Fixture in internal space|
+|-----------|------------------------------------|
+|EIR ID	|er_04|
+|Object	|IfcLightFixture|
+|Object URI|https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcLightFixture|
+|Purpose|  40 Ekonomi| 
+|Milestone| 2 Projekteringsskede|
+|Detail level| Component|
+|Actor| Manufacturer|
+|**Alphanumeric information:**|   |
+|IFC Object Name |	Light Fixture name.|
+|IFC Object Description |	-|
+|IFC PredefinedType	| -|
+|**ISO/TS 7127 Properties:**|  |
+|---------------|-------------------|
+|	Data content needs |	Length of light fixture|
+|	Limitations	|-|
+|	Propertyset|	Mechanical_Properties|
+|	Property	|overall_length|
+| URI/GUID|1uJglYpRnFpQ4tStHaR2Pf|
+|	Allowed values	| -|
+| Key property    |The value must be TRUE if the property is a key property for the object. Otherwise, the value is FALSE or empty.|
+|-----------------|-------------------|
+|	Data content needs |	Height of light fixture|
+|	Limitations	|-|
+|	Propertyset|	Mechanical_Properties|
+|	Property	|overall_height|
+| URI/GUID|19Z9XKYDT4p8HR0ZbD$wO_|
+|	Allowed values	| -|
+| Key property    |The value must be TRUE if the property is a key property for the object. Otherwise, the value is FALSE or empty.|
+|-----------------|-------------------|
+|	Data content needs |	Manufacturer details|
+|	Limitations	|-|
+|	Propertyset|	Marketing_Properties|
+|	Property	|Manufacturer|
+| URI/GUID|3gmbhSjFD4JOPQZ7_I$HzY|
+|	Allowed values	| -|
+| Key property    |The value must be TRUE if the property is a key property for the object. Otherwise, the value is FALSE or empty.|
+|-----------------|-------------------|
+|	Data content needs |	Product identifiction|
+|	Limitations	|-|
+|	Propertyset|	Marketing_Properties|
+|	Property	|item_number|
+| URI/GUID|29UfpgwX5Eyu$KCZIxfJZy|
+|	Allowed values	| -|
+| Key property    |The value must be TRUE if the property is a key property for the object. Otherwise, the value is FALSE or empty.|
+|**Documentation:** |  |
+|	Document	| - |
