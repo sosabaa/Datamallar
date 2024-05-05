@@ -29,3 +29,6 @@
 |3|Asset|
 |3|Equipment|
 |4|LOIN|
+
+## Top Domain Model
+<img src="https://github.com/sosabaa/Datamallar/assets/73257793/c9e960f9-536e-455c-88ec-d636950e39d8" alt="Top domain model"/>
