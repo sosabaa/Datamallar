@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ids:ids xmlns:ids="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/0.9.7/ids.xsd">
+	<ids:info>
+		<ids:title>AP4 Use Case</ids:title>
+		<ids:copyright>JTH</ids:copyright>
+		<ids:version>1.0</ids:version>
+		<ids:description>Brief, design, analysis and selection of light fixture for office space</ids:description>
+		<ids:author>stephen.sabaa@ju.se</ids:author>
+		<ids:date>2024-04-03</ids:date>
+		<ids:purpose>10_Visualisering--11_Dialog</ids:purpose>
+		<ids:milestone>1_Programskede_1_Conception_of_need</ids:milestone>
+		<ids:detail>Funktion</ids:detail>
+		<ids:actor>Client</ids:actor>
+	</ids:info>
+	<ids:specifications>
+		<ids:specification dictionary="IFC4X3" name="Room functional requirements" identifier="er_AP4TS_01.1" description="This is to obtain a general brief for the visualization of an office space for dialogue.">
+			<ids:applicability minOccurs="1" maxOccurs="unbounded">
+				<ids:entity uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL">
+					<ids:name>
+						<ids:simpleValue>IFCSPACE</ids:simpleValue>
+					</ids:name>
+				</ids:entity>
+			</ids:applicability>
+			<ids:requirements>
+				<ids:property uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL/prop/Pset_SpaceCommon/NetPlannedArea" dataType="IFCAREAMEASURE" cardinality="required" keyProperty="1">
+					<ids:propertySet>
+						<ids:simpleValue>Pset_SpaceCommon</ids:simpleValue>
+					</ids:propertySet>
+					<ids:baseName>
+						<ids:simpleValue>NetPlannedArea</ids:simpleValue>
+					</ids:baseName>
+				</ids:property>
+				<ids:property uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL/prop/Pset_SpaceOccupancyRequirements/OccupancyNumber" dataType="IFCPOSITIVEINTEGER" cardinality="required" keyProperty="1">
+					<ids:propertySet>
+						<ids:simpleValue>OccupancyRequirements</ids:simpleValue>
+					</ids:propertySet>
+					<ids:baseName>
+						<ids:simpleValue>OccupancyNumber</ids:simpleValue>
+					</ids:baseName>
+				</ids:property>
+				<ids:property uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL/prop/Attributes/LongName" dataType="STRING" cardinality="required" keyProperty="1">
+					<ids:propertySet>
+						<ids:simpleValue>Attributes</ids:simpleValue>
+					</ids:propertySet>
+					<ids:baseName>
+						<ids:simpleValue>Long Name</ids:simpleValue>
+					</ids:baseName>
+				</ids:property>
+			</ids:requirements>
+		</ids:specification>
+	</ids:specifications>
+</ids:ids>
+
