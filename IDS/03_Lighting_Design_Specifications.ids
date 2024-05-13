@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ids:ids xmlns:ids="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/0.9.7/ids.xsd">
+	<ids:info>
+		<ids:title>Lighting Design Specifications</ids:title>
+		<ids:copyright>JTH</ids:copyright>
+		<ids:version>1.0</ids:version>
+		<ids:description>This is to obtain information from the Architect to enable lighting design and simulation </ids:description>
+		<ids:author>stephen.sabaa@ju.se</ids:author>
+		<ids:date>2024-04-04</ids:date>
+		<ids:purpose>30_Utformning_31_Analys</ids:purpose>
+		<ids:milestone>2_Projekteringsskede_4_Outline_Conceptual_Design</ids:milestone>
+		<ids:detail>Funktion</ids:detail>
+		<ids:actor>Architect</ids:actor>
+	</ids:info>
+	<ids:specifications>
+		<ids:specification ifcVersion="IFC4X3" name="Lighting design specification" identifier="er_AP4TS_03.1" description="This is to obtain information from the Architect to enable lighting design and simulation " instructions="To be provided by the Architect">
+			<ids:applicability minOccurs="1" maxOccurs="unbounded">
+				<ids:entity uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpaceINTERNAL">
+					<ids:name>
+						<ids:simpleValue>IFCSPACE</ids:simpleValue>
+					</ids:name>
+					<ids:predefinedType>
+						<ids:simpleValue>SPACE</ids:simpleValue>
+					</ids:predefinedType>
+				</ids:entity>
+			</ids:applicability>
+			<ids:requirements>
+				<ids:property uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpace/prop/Pset_SpaceLightingDesign/ArtificialLighting" dataType="IFCBOOLEAN" cardinality="required" keyProperty="1">
+					<ids:propertySet>
+						<ids:simpleValue>SpaceLightingDesign</ids:simpleValue>
+					</ids:propertySet>
+					<ids:baseName>
+						<ids:simpleValue>ArtifificialLightIng</ids:simpleValue>
+					</ids:baseName>
+				</ids:property>
+				<ids:property uri="https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpace/prop/Pset_SpaceLightingDesign/Illuminance" dataType="IFCREAL" cardinality="required" keyProperty="1">
+					<ids:propertySet>
+						<ids:simpleValue>SpaceLightingDesign</ids:simpleValue>
+					</ids:propertySet>
+					<ids:baseName>
+						<ids:simpleValue>Illuminance</ids:simpleValue>
+					</ids:baseName>
+				</ids:property>
+			</ids:requirements>
+		</ids:specification>
+	</ids:specifications>
+</ids:ids>
