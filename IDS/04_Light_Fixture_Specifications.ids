@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ids:ids xmlns:ids="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/0.9.7/ids.xsd">
+  <ids:info>
+    <ids:title>Light Fixture Specifications</ids:title>
+    <ids:copyright>JTH</ids:copyright>
+    <ids:version>1.0</ids:version>
+    <ids:description>To specify information necessary for the bidding process</ids:description>
+    <ids:author>stephen.sabaa@ju.se</ids:author>
+    <ids:date>2024-04-05</ids:date>
+    <ids:purpose>40_Ekonomi_41 Kostnadskalylering_44 Offert/anbud</ids:purpose>
+    <ids:milestone>2_Projekteringsskede_5_Full_conceptual_design</ids:milestone>
+	<ids:actor>Manufacturer</ids:actor>
+  </ids:info>
+  <ids:specifications>
+    <ids:specification dictionary="ISO/TS_7127:2023" name="Lighting fixture specifications" identifier="er_ApTS_04.1" description="To specify information necessary for the bidding process" instructions="To be provided by the lighting designer to the consulting/client architect">
+      <ids:applicability minOccurs="1" maxOccurs="unbounded">
+        <ids:entity uri="https://coclass.byggtjanst.se/classes/68/302/300445">
+          <ids:name>
+            <ids:simpleValue>HangingLightFixture</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property uri="1uJglYpRnFpQ4tStHaR2Pf" dataType="IFCREAL" cardinality="required" keyProperty="1">
+          <ids:propertySet>
+            <ids:simpleValue>Mechanical_Properties</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>overall_length</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property uri="19Z9XKYDT4p8HR0ZbD$wO_" dataType="IFCREAL" cardinality="required" keyProperty="1">
+          <ids:propertySet>
+            <ids:simpleValue>ElementSize</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>overall_height</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property uri="2Ofl8_YFT4IOfQwk92MRwM" cardinality="required" keyProperty="1">
+          <ids:propertySet>
+            <ids:simpleValue>ManufacturerTypeInformation</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>GlobalTradeItemNumber</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property uri="3gmbhSjFD4JOPQZ7_I$HzY" cardinality="required"keyProperty="1">
+          <ids:propertySet>
+            <ids:simpleValue>ManufacturerTypeInformation</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>Manufacturer</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property uri="3Nafl5m1f91eUjON0JbahC" dataType="IFCLENGTHMEASURE" cardinality="required" keyProperty="1">
+          <ids:propertySet>
+            <ids:simpleValue>Photometric_properties</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>Spectrum</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+  </ids:specifications>
+</ids:ids>
